@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///Users/cleberbrandao/projects/ENV/usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.47 scan initiated Sat Jan 31 01:54:41 2015 as: /Users/cleberbrandao/projects/ENV/usr/local/bin/nmap -A -p 80,22 -oX nmap-centos7.xml 172.16.1.3 -->
+<nmaprun scanner="nmap" args="/Users/cleberbrandao/projects/ENV/usr/local/bin/nmap -A -p 80,22 -oX nmap-centos7.xml 172.16.1.3" start="1422676481" startstr="Sat Jan 31 01:54:41 2015" version="6.47" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1422676481" endtime="1422676489"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="172.16.1.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 55:b3:76:45:e3:95:97:1d:30:62:05:81:3d:17:8c:ec (RSA)&#xa;  256 7e:95:42:30:fb:fb:d4:3f:a6:bc:8a:ac:72:b2:22:1b (ECDSA)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">55b37645e395971d306205813d178cec</elem>
+<elem key="key">QUFBQUIzTnphQzF5YzJFQUFBQURBUUFCQUFBQkFRQ3Y4MVN6cGdKdlNybTZwZlBFektsaklrYkR0eE5qS2pIN0NPU21KWkcrQ0FTTkk0NTJzeWljcVBVa2F0aDcvTGFCM3lUVXZzR0RlSDYzSytXVGdodmVUaHBtUlA4clRrcE1FeVB0OWZBYVdRRG9QVzV5amNQMEw3RXdCSVpYcW9oMGhrWWlyL2NjYlRqWEpIMXgwMmlub3E0dHRFMkRkUWt1Q0thWUVtU0M1SU5lSEpvSHNkMzJoNVBBZTR0YmgyTDlLZ0lDZ1BTTFBYT1lzeDN1V25xMVpZbVhDZGk3M055Y2h1ZGJydTRvT053U1pQYXYyZVBmSWZjaU5ZLzNZQnZ1bWhFa0tJV0gyc0hZZjh4MnI0YUljSGZ4UXpzcGZMS2hyUDRpeFVBRUlYRDFEKzRCYVhRSXlCZTlSM3ZJTHhhbG9vdmYxMDU0MVdtN3VMTEQ3VFdC</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">7e954230fbfbd43fa6bc8aac72b2221b</elem>
+<elem key="key">QUFBQUUyVmpaSE5oTFhOb1lUSXRibWx6ZEhBeU5UWUFBQUFJYm1semRIQXlOVFlBQUFCQkJBU05GY1drSWpZY0d6ZkQrU1JFZExWNTRLazA1SHZLK0EyNjJ4M2ZITjdCazBQL2VFaGpZb0ZMWnNYcVR3cWRyV05OZDlqMzZBam02M2R1SGxJR0swWT0=</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.6" extrainfo="(CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.4.16 SVN/1.7.14 mod_wsgi/3.4 Python/2.7.5" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.6</cpe></service><script id="http-methods" output="Potentially risky methods: TRACE&#xa;See http://nmap.org/nsedoc/scripts/http-methods.html"/><script id="http-title" output="Apache HTTP Server Test Page powered by CentOS"><elem key="title">Apache HTTP Server Test Page powered by CentOS</elem>
+</script></port>
+</ports>
+<times srtt="401" rttvar="2146" to="100000"/>
+</host>
+<runstats><finished time="1422676489" timestr="Sat Jan 31 01:54:49 2015" elapsed="7.60" summary="Nmap done at Sat Jan 31 01:54:49 2015; 1 IP address (1 host up) scanned in 7.60 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
